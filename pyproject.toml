@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "strictyamlpath"
+version = "0.1.0"
+description = "Print the value at a dotted path inside a YAML file, strict by default"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "lllee4" }]
+
+[project.scripts]
+strictpath = "strictyamlpath.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
