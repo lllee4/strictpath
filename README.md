@@ -110,3 +110,10 @@ $ python -m strictyamlpath.cli config.yaml server.port
 ```
 
 Requires Python 3.9+. Standard library only.
+
+## Development
+
+```
+$ pip install -e .
+$ python -m unittest discover -s tests
+```
